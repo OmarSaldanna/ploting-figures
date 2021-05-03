@@ -67,7 +67,7 @@ if __name__ == '__main__':
 	fg = 'white'
 	window=tk.Tk()
 	window.title("Graficas de Poligonos")
-	window.geometry('650x650')
+	window.geometry('750x700')
 	window.configure(background=bg)
 	# puente de variables para el resultado
 	bridge = tk.StringVar()
@@ -84,13 +84,14 @@ if __name__ == '__main__':
 
 	labs = ['-> Circulo: ingresa el radio del circulo',
 			'-> Cuadrado: Ingresa los puntos de su diagonal',
-			'-> Triangulo: ingresa todos sus puntos'
-			'-> Luego ingresa el color del borde y el relleno']
+			'-> Triangulo: ingresa todos sus puntos',
+			'-> Luego ingresa el color del borde y el relleno',
+			'!importante, NO PONER ESPACIOS ENTRE COMAS O PUNTOS.']
 
 	for lab in labs:
 		label = tk.Label(window, text=lab, bg=bg, fg=fg)
 		label.config(font=("Courier", 22))
-		label.pack(padx=10,pady=4,ipadx=5,ipady=5, anchor='w')
+		label.pack(padx=10,pady=6,ipadx=5,ipady=5, anchor='w')
 
 	##################################### entrada de texto y menu
 	
